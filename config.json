@@ -1,0 +1,18 @@
+{
+    "USERNAMES" : {
+        "MagixSan#5275" : "Megan",
+        "KlickoSan#1153" : "Kristin",
+        "X360xNoScOpEx#5841" : "Aaron", 
+        "reck#1602" : "Arissa",
+        "San#7416" : "Ellen"
+    },
+    "COMMANDS" : [
+        "!test",
+        "!hi",
+        "!hello",
+        "!day",
+        "!weather",
+        "!commands",
+        "!help"
+    ]
+  }
