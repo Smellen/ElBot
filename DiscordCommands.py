@@ -10,4 +10,3 @@ async def send_message_to_channel(client, channel, listOfMessages):
     for msg in listOfMessages:
         print('message: ' + msg)
         await client.send_message(channel, msg)
-
