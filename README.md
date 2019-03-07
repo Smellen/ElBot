@@ -17,14 +17,14 @@ config.json
 Values that have the potential to change to reduce changing any py files. These values will be stored in global variables for the moment.
 
 All Discord bot commands:
-Command  | Description
-------------- | -------------
-!hello  | The bot will say hello to the user with a custom message.
-!weather *city | The bot will make a call to a weather API and pull back the temperature and brief description.
-!day | Will return the current day.
-!test | A test command that is used for debugging.
-!commands or !help | Lists all available commands and a brief description of each.
 
+Command | Description |
+--- | --- | 
+!hello  | The bot will say hello to the user with a custom message. | 
+!weather !city | The bot will make a call to a weather API and pull back the temperature and brief description. |
+!day | Will return the current day. |
+!test | A test command that is used for debugging. |
+!commands or !help | Lists all available commands and a brief description of each. |
 
 # TODO: 
 * Add in randomising of response messages.
