@@ -2,7 +2,7 @@
 # 29th January 2019
 # Functions related to El bot response to Hello
 import discord
-from DiscordCommands import send_message_to_channel
+from discord_commands import send_message_to_channel
 
 TOKEN = 'NTM1NTY4NTYxMDkyMDM0NTYw.DyKDqw.UrFBjjWZTyf8jGuc6YmE0z92R2E'
 client = discord.Client()
