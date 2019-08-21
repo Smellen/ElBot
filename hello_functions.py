@@ -3,14 +3,18 @@
 # Functions related to El bot response to Hello
 import discord
 from discord_commands import send_message_to_channel
+import settings
 
-TOKEN = 'NTM1NTY4NTYxMDkyMDM0NTYw.DyKDqw.UrFBjjWZTyf8jGuc6YmE0z92R2E'
-client = discord.Client()
+settings.settings_init()
 
-async def hello(message):
+async def hello(client, channel, message):
     print('here' + str(message.channel))
-    msg = 'Debug - else statement. HelloFunctions.py'
+    if str(message.author) == settings.megan:
+        msg = 'Dia dhuit ' + str(message.author) + '! Cén chaoi a bhfuil mo chroí agat inniu? \nWho are we suing today?'
+    elif str(message.author) == settings.aaron:
+        msg = 'Hola mi amigo' + str(message.author) + '! Why do Canadians store their milk in bags? \nYou are my favourite Canadian ... after Ryan Reynolds :)'
+    elif str(message.author) == settings.ellen:
+        msg = 'DEBUG: Finding the name: ' + settings.ellen + " and in the on_message() function"
+    else :
+        msg = 'Hola! ' + str(message.author) + ' \nI have no custom greeting for you :( \n' + 'I\'ll work on that but have love heart instead :heart:'            
     await client.send_message(message.channel, msg)
-
-# TODO: Add a function per user to return their custom messages.
-client.run(TOKEN)

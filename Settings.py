@@ -45,7 +45,7 @@ def settings_init():
     getCommands(botcommands)
 
     global discordToken
-    discordToken = '{DISCORD TOKEN}'
+    discordToken = 'NTM1NTY4NTYxMDkyMDM0NTYw.XV2E3w.RcTFuHbM_zRtgpRYxZuwVZ9Pxok'
 
 print("About to start")
 settings_init()
