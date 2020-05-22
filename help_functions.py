@@ -3,10 +3,10 @@
 # Functions related to help function
 import discord
 
-async def print_all_commands_in_channel(client, channel, listOfCommands):
+async def print_all_commands_in_channel(message, listOfCommands):
     allCommands = ""
 
     for cmd in listOfCommands:
         allCommands = allCommands + cmd + "\n"
  
-    await client.send_message(channel, allCommands)
+    await message.channel.send(allCommands)

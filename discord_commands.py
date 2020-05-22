@@ -3,10 +3,10 @@
 # Functions related to El bot for sending commands to Discord.
 import discord
 
-async def send_message_to_channel(client, channel, listOfMessages):
+async def send_message_to_channel(message, listOfMessages):
 
-    print('Channel name ' + channel.name)
+    print('Channel name ' + message.channel.name)
 
     for msg in listOfMessages:
         print('message: ' + msg)
-        await client.send_message(channel, msg)
+        await message.channel.send(msg)

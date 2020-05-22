@@ -36,6 +36,5 @@ All Discord bot commands:
 * Remove all hardcoded values, they should be read from settings/configs.
 * Proper README
 * Update the !help command with a full list. Read from config not hard coded.
-* Move weather API calls into a seperate class.
 * Use Python coding standards.
 * Unit tests? 

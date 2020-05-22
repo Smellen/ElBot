@@ -7,8 +7,8 @@ import settings
 
 settings.settings_init()
 
-async def hello(client, channel, message):
-    print('here' + str(message.channel))
+async def hello(message):
+    print('here' + str(message.channel.name))
     if str(message.author) == settings.megan:
         msg = 'Dia dhuit ' + str(message.author) + '! Cén chaoi a bhfuil mo chroí agat inniu? \nWho are we suing today?'
     elif str(message.author) == settings.aaron:
@@ -17,4 +17,4 @@ async def hello(client, channel, message):
         msg = 'DEBUG: Finding the name: ' + settings.ellen + " and in the on_message() function"
     else :
         msg = 'Hola! ' + str(message.author) + ' \nI have no custom greeting for you :( \n' + 'I\'ll work on that but have love heart instead :heart:'            
-    await client.send_message(message.channel, msg)
+    await message.channel.send(msg)

@@ -45,7 +45,7 @@ def settings_init():
     getCommands(botcommands)
 
     global discordToken
-    discordToken = '{{ADD DISCORD TOKEN}}'
+    discordToken = ''
 
-print("About to start")
+print("El bot is starting up!")
 settings_init()
