@@ -1,5 +1,10 @@
 FROM python:3
 
-ADD el_bot.py /
+ADD *.py /
+ADD config.json /
+
+RUN pip install requests
+RUN pip install discord
+
 
 CMD [ "python", "./el_bot.py" ]
