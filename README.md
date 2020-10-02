@@ -1,6 +1,14 @@
 # ElBot
 A custom discord bot.
 
+# Local setup
+## Pre requisites
+- python 3
+- pip
+- pip module requests
+- pip module discord
+- discord API token
+
 **el_bot.py**
 
 This is the main file that starts the connection to discord.
