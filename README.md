@@ -10,6 +10,8 @@ A custom discord bot.
 - discord API token [Discord documentation](https://discord.com/developers/docs/topics/oauth2)
 
 ## Running the bot
+From the root filer run the following command: 
+
 `python3 el_bot.py`
 
 **el_bot.py**
