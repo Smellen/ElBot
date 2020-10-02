@@ -7,7 +7,10 @@ A custom discord bot.
 - pip
 - pip module requests
 - pip module discord
-- discord API token
+- discord API token [Discord documentation](https://discord.com/developers/docs/topics/oauth2)
+
+## Running the bot
+`python3 el_bot.py`
 
 **el_bot.py**
 
